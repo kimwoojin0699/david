@@ -47,5 +47,9 @@ def index():
 
     return render_template('index.html', error=error, audio=audio, audio_filename=audio_filename)
 
+@app.route('/menu')
+def menu():
+    return "menu"
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
